@@ -66,13 +66,10 @@ function testSearchAlgorithms() {
         const sortedArr = sortArray([...arr]);
         const target = arr[Math.floor(Math.random() * arr.length)];
 
-        // Послідовний пошук
         const linearResult = linearSearch(arr, target);
 
-        // Бінарний пошук
         const binaryResult = binarySearch(sortedArr, target);
 
-        // Пошук методом інтерполяції
         const interpolationResult = interpolationSearch(sortedArr, target);
 
         results.push({
